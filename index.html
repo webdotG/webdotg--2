@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webdotg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://kit.fontawesome.com/e203d4ad76.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo-link"><img src="" width="60px" height="60px" alt="logo"></a>
+        <input type="checkbox" id="nav-menu">
+        <label class="nav-label" for="nav-menu"><p>click me</p></label>
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#">skills</a></li>
+            <li><a class="nav-link" href="#">about</a></li>
+            <li><a class="nav-link" href="#">shop</a></li>
+            <li><a class="nav-link" href="#">contacts</a></li>
+        </ul>
+        <div class="burger-line burger-line-first"></div>
+        <div class="burger-line burger-line-seconde"></div>
+        <div class="burger-line burger-line-thirth"></div>
+        <div class="burger-line burger-line-fourth"></div>
+    </nav>
+    <section class="header-gallery">
+        <img class="header-gallery__img" src="img/jul-main.jpg" alt="header img gallery">
+        <h1 class="header-gallery__title">webdotg</h1>
+        <ul class="mini-list">
+            <li>web</li>
+            <li>photo</li>
+            <li>food</li>
+        </ul>
+    </section>
+</header>
+<main>
+    <section class="about">
+        <h2 class="about__title">about webdotg?</h2>
+        <p class="about__paragraph">
+            webdotg это сай-визитка который частично рассказывает обо мне, что-то схожее с резюме и знакомством в
+            баре.<br>
+        </p>
+        <ul class="slider">
+            <li class="slider__slide slider__slide--active">
+                <p class="slide__paragraph">я познакомился с ним в 2007 году и он до сих пор умудряется меня
+                    удивлять</p>
+                <img class="slider__img" src="img/icon__user1.png" alt="slide 1">
+            </li>
+            <li class="slider__slide">
+                <p class="slide__paragraph">готовить он конечно умеет тут не отнимешь</p>
+                <img class="slider__img" src="img/icon__user1.png" alt="slide 2">
+            </li>
+            <li class="slider__slide">
+                <p class="slide__paragraph">вот бы еще работу нашел</p>
+                <img class="slider__img" src="img/icon__user1.png" alt="slide 3">
+            </li>
+        </ul>
+        <button id="slider__btn--prev"><img src="img/icon__right.png" alt="prev btn"></button>
+        <button id="slider__btn--next"><img src="img/icon__right.png" alt="prev btn"></button>
+    </section>
+    <section class="skills">
+        <h2>skills</h2>
+        <ul class="skills-list">
+            <li class="skills-list__item">
+                <img class="skills-list__img" src="" alt="skills photo">
+                <h3 class="skills-list__title">web</h3>
+                <p class="skills-list__paragraph">website develop</p>
+                <a class="skills-list__btn" href="#">more</a>
+            </li>
+            <li class="skills-list__item">
+                <img class="skills-list__img src="" alt="skills photo">
+                <h3 class="skills-list__title">photo</h3>
+                <p class="skills-list__paragraph">photo business</p>
+                <a class="skills-list__btn" href="#">more</a>
+            </li>
+            <li class="skills-list__item">
+                <img class="skills-list__img src="" alt="skills photo">
+                <h3 class="skills-list__title">sweets</h3>
+                <p class="skills-list__paragraph">chocolate and more</p>
+                <a class="skills-list__btn" href="#">more</a>
+            </li>
+            <li class="skills-list__item">
+                <img class="skills-list__img src="" alt="skills photo">
+                <h3 class="skills-list__title">other</h3>
+                <p class="skills-list__paragraph">project ideas</p>
+                <a class="skills-list__btn" href="#">more</a>
+            </li>
+        </ul>
+    </section>
+    <section class="shop">
+        <h2 class="shop__title">shop</h2>
+        <p class="shop__paragraph">это то место где я меняю свои умения на ваши деньги</p>
+        <h4 class="shop-list__title-sub">перейти в магазин</h4>
+        <a id="shop__btn" href="#">
+            <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x='0' y='0' fill='none' width='130' height='65'/>
+            </svg>
+            шопиться</a>
+    </section>
+    <section class="contacts">
+        <div class="contacts__left-block">
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <h4>телеграм</h4>
+                    <a href="#">@webdotg</a>
+                </li>
+                <li class="contacts-list__item">
+                    <h4>телефон</h4>
+                    <a class="contacts-list__item" href="tel:+6494461709">+79022888989</a>
+                </li>
+                <li class="contacts-list__item">
+                    <h4>email</h4>
+                    <a class="contacts-list__item" href="mailto:12345@htmlbook.ru">webdotg.inbox@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="form-wrapper">
+            <form>
+                <div class="input-group">
+                    <label for="form-name"><i class="fa-solid fa-user-crown"></i> name</label>
+                    <input type="text" id="form-name">
+                </div>
+                <div class="input-group">
+                    <label for="form-tel">phone</label>
+                    <input type="tel" id="form-tel">
+                </div>
+                <div class="input-group">
+                    <label for="form-email">email</label>
+                    <input type="email" id="form-email">
+                </div>
+                <div class="input-group">
+                    <label for="form-message"></label>
+                    <textarea id="form-message" rows="8"></textarea>
+                </div>
+                <button id="btn-submit" type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+<script src="js/main-slider.js"></script>
+</body>
+</html>
